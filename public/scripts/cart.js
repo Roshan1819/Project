@@ -46,8 +46,6 @@ let amount = 0;
             var cell4 = row.insertCell(4);
             // var c1 = document.createElement("center");
             // var c2 = document.createElement("center");
-            // var c2 = document.createElement("center");
-           
             
             
             
