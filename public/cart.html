@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transflower.com</title>
+</head>
+<body style="background-color: rgb(241, 241, 230);" >
+    <center><img src="./images/logo.jpg" alt="flower image" width="1200" height="250"></center>
+    <marquee behavior="scroll" >
+       <font size = "6">
+           <b id="text2"> hurry up grab your offer ! use promocode flower2021 for 20% discount</b>
+        </font>
+    </marquee>
+    <hr size="10" color="dark">
+    <p align = "left"></p> 
+        
+    <font size = "4"><a href="index.html">Home</a></font> |
+    <font size = "4"><a href="about.html">About us</a></font> |
+    <font size = "4"><a href="contact.html">Contact us</a></font> |
+    <font size = "4"><a href="login.html">Login</a></font> |
+    <font size = "4"><a href="register.html">Sign Up</a></font> |
+    <font size = "4"><a href="careers.html">Careers</a></font>
+</p>
+    <hr size="10" color="dark">
+    <center>
+        <h1>
+            Cart
+        </h1>
+    </center>
+    <div style="float: left;margin: 30px;">
+        <form action="addFlower()">
+            <table>
+            
+                <tr>
+                    <td>
+                        <label><b><font size = "5">Flower name</font></b></label>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                       
+                        <select id="flowname" style="height: 5ch; width: 15ch; font-size: larger;">
+                            <option style="font-size: larger;">Rose</option>
+                            <option style="font-size: larger;">Lilly</option>
+                            <option style="font-size: larger;">Gerbera</option>
+                            <option style="font-size: larger;">Lotus</option>
+                            <option style="font-size: larger;">Jasmine</option>
+                            <option style="font-size: larger;">Tulips</option>
+                            <option style="font-size: larger;">Orchid</option>
+                        </select>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                            <font size = "5">
+                                Quantity
+                            </font>
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="quant" style="font-size: larger;">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <button onclick="addFlower()" type="button" style="color: lightcoral; width: 15ch; height: 5ch;">
+                            <b>ADD</b>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+     
+        <center><div>
+            <table id="flowerlist" width = "40%" border="hr" >
+                <tr bgcolor = "lighblue">
+                    
+                    <th>
+                        <font  size ="6">
+                            Flower name
+                        </font>
+                    </th>
+                    <th>
+                        <font size ="6">
+                            Price
+                        </font>
+                    </th>
+                    <th>
+                        <font size ="6">
+                            Quantity
+                        </font>
+                    </th>
+                    <th>
+                        <font size ="6">
+                            Total Price
+                        </font>
+                    </th>
+                    <th>
+                        <font size ="6">
+                           Action
+                        </font>
+                    </th>
+                    
+                </tr>
+
+            </table>
+            <br>
+            <center><button onclick="billing()"><font size="4">Get Total</font></button></center>
+       
+        </div></center>
+
+        <h2 id="totalamount" > </h2>
+    <script src="./scripts/cart.js"> 
+    </script>
+    <script>
+          function flash ()
+            {
+                var t = document.getElementById("text2");
+                t.style.color = (t.style.color == "brown") ? "darkcyan" : "brown";
+            }
+            setInterval(flash, 500);
+    </script>
+</body>
+</html>

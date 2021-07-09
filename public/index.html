@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranflower.com</title>
+</head>
+<body style="background-color: rgb(241, 241, 230);" >
+         <center><img src="./images/logo.jpg" alt="flower image" width="1200" height="250"></center>
+        <!-- <marquee behavior="scroll" ><font size = "6">
+            <b id="text1">TransFlower</b>
+        </font></marquee> -->
+        <center><h1 id="headtext">TRANSFLOWER|</h1></center>
+         <hr size="10" color="dark">
+        <p align = "left" style="color: brown;"> 
+            
+            <font size = "4"><a href="about.html"> <font size = "4"> About us</font></a> |
+            <font size = "4"><a href="contact.html"> <font size = "4"> Contact us</font></a> |
+            <font size = "4"><a href="login.html"> <font size = "4"> Login</font></a> |
+            <font size = "4"><a href="register.html"> <font size = "4"> Sign Up</font></a> |
+            <font size = "4"><a href="careers.html"> <font size = "4"> Careers</font></a>
+            
+        </p>
+        <hr size="10" color="dark">
+        <center>
+            <table>
+                <h1><font size = "10">Product List</font></h1>
+                <tr>
+                    <td width = "10%"><center><img src="./images/rose.jpg"  width="175" height="200"></center></td>
+                    <td width = "10%"><center><img src="./images/gerbera.jpg"  width="175" height="200"></center></td>
+                   <td width = "10%"><center><img src="./images/orchid.jpg" width="175" height="200"></center></td>
+                    <td width = "10%"><center><img src="./images/lotus.jpg"  width="175" height="200"></center></td>
+                    <td width = "10%"><center><img src="./images/jasmine.jpg"  width="175" height="200"></center></td>
+                    <td width = "10%"><center><img src="./images/lily.jpg"  width="175" height="200"></center></td>
+                    <td width = "10%"><center><img src="./images/tulip.jpg"  width="175" height="200"></center></td>
+                    
+                </tr>
+                <tr>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Rose">Rose</a></font></center></td>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Gerbera">Gerbera</a></font></center></td>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Orchidaceae">Orchid</a></font></center></td>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Lotus">Lotus</a></font></center></td>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Jasmine">Jasmine</a></font></center></td>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Lilium">Lilly</a></font></center></td>
+                    <td width = "10%"><center><font size = "5"><a href="https://en.wikipedia.org/wiki/Tulip">Tulips</a></font></center></td>
+                </tr>
+            </table>
+            <br>
+            <button><a href="login.html"> <font size = "5"> Make Your Order</font></a></button>
+            <button ><a href ="catlog.html"> <font size = "5"> Catlog</font></a></button>
+        </center>
+        <br>
+        <hr size="10" color="dark">
+        <p style="color: darkgray;"><font size = "6">Our Presence: Pune, Kolhapur</font></p>
+        <p align = "right"><font size = "5"><a href="feedback.html">Feedback</a></font></p>
+        <script>
+            function flash ()
+            {
+                var t = document.getElementById("text1");
+                t.style.color = (t.style.color == "brown") ? "darkcyan" : "brown";
+            }
+            setInterval(flash, 500);
+            
+            function typeEffect()
+            {
+                var ht = document.getElementById("headtext");
+                if(ht.innerText == "TRANSFLOWER|")
+                {
+                    ht.innerText = "T|";
+                }
+               else if(ht.innerText == "T|")
+               {
+                   ht.innerText = "TR|"
+               }
+               else if(ht.innerText == "TR|")
+               {
+                   ht.innerText = "TRA|"
+               }
+               else if(ht.innerText == "TRA|")
+               {
+                   ht.innerText = "TRAN|"
+               }
+               else if(ht.innerText == "TRAN|")
+               {
+                   ht.innerText = "TRANS|"
+               }
+               else if(ht.innerText == "TRANS|")
+               {
+                   ht.innerText = "TRANSF|"
+               }
+               else if(ht.innerText == "TRANSF|")
+               {
+                   ht.innerText = "TRANSFL|"
+               }
+               else if(ht.innerText == "TRANSFL|")
+               {
+                   ht.innerText = "TRANSFLO|"
+               }
+               else if(ht.innerText == "TRANSFLO|")
+               {
+                   ht.innerText = "TRANSFLOW|"
+               }
+               else if(ht.innerText == "TRANSFLOW|")
+               {
+                   ht.innerText = "TRANSFLOWE|"
+               }
+               else 
+               {
+                   ht.innerText = "TRANSFLOWER|"
+               }
+            }
+            setInterval(typeEffect, 500)
+        </script>
+    </body>
+</html>

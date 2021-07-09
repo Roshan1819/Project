@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranflower.com</title>
+</head>
+<body style="background-color: rgb(241, 241, 230);" >
+    <center><img src="./images/logo.jpg" alt="flower image" width="1200" height="250"></center>
+        <hr size="10" color="dark">
+        <p align = "left"></p> 
+            
+        <a href="index.html">Home</a> |
+        <a href="contact.html">Contact us</a> |
+        <a href="about.html">About us</a> |
+        <a href="login.html">Login</a> |
+        <a href="careers.html">Careers</a>
+    </p>
+        <hr size="10" color="dark">
+        
+        <center>
+            <h1><font size = "10">Sign Up</font></h1>
+            <form action="/api/customers" method="POST" >
+                <table>
+                    <tr>
+                        <td><font size="5"><label>First Name</label></font></td>
+                        <td><input type="text" name = "fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><label>Last Name</label></font></td>
+                        <td><input type="text" name = "lname"  required></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><label>Contact Number</label></font></td>
+                        <td><input type="text" name = "cnum"  required></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><label>Email</label></font></td>
+                        <td><input type="text" name = "email"  required></td>
+                    </tr>
+                    <tr>
+                        <td><font size="5"><label>Username</label></font></td>
+                        <td><input type="text"  name = "Username" required></td>
+                    </tr>
+                </table>
+                <button onclick="onSubmit()" type="submit" style="font-size: x-large;">SUBMIT</button>
+            </form>
+            
+        </center>
+        <script>
+                function onSubmit()
+                {
+                    alert("Your Data submitted succesfully");
+                }
+        </script>
+        
+   </body>
+</html>
+
+
